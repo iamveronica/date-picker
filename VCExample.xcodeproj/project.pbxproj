@@ -20,6 +20,10 @@
 		891873BE1505519F00CB04FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8918739F1505519F00CB04FC /* Foundation.framework */; };
 		891873C61505519F00CB04FC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 891873C41505519F00CB04FC /* InfoPlist.strings */; };
 		891873C91505519F00CB04FC /* VCExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 891873C81505519F00CB04FC /* VCExampleTests.m */; };
+		891873DA150559B500CB04FC /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 891873D8150559B500CB04FC /* SecondViewController.m */; };
+		891873DB150559B500CB04FC /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 891873D9150559B500CB04FC /* SecondViewController.xib */; };
+		89A7BFE3150737D800DB7C1C /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A7BFE1150737D800DB7C1C /* ThirdViewController.m */; };
+		89A7BFE4150737D800DB7C1C /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89A7BFE2150737D800DB7C1C /* ThirdViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,21 +41,27 @@
 		8918739D1505519F00CB04FC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8918739F1505519F00CB04FC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		891873A11505519F00CB04FC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		891873A51505519F00CB04FC /* VCExample-Info.plist */ = {isa = PBXFileReference; path = "VCExample-Info.plist"; sourceTree = "<group>"; };
+		891873A51505519F00CB04FC /* VCExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VCExample-Info.plist"; sourceTree = "<group>"; };
 		891873A71505519F00CB04FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		891873A91505519F00CB04FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		891873AB1505519F00CB04FC /* VCExample-Prefix.pch */ = {isa = PBXFileReference; path = "VCExample-Prefix.pch"; sourceTree = "<group>"; };
-		891873AC1505519F00CB04FC /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		891873AB1505519F00CB04FC /* VCExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VCExample-Prefix.pch"; sourceTree = "<group>"; };
+		891873AC1505519F00CB04FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		891873AD1505519F00CB04FC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		891873AF1505519F00CB04FC /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		891873AF1505519F00CB04FC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		891873B01505519F00CB04FC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		891873B31505519F00CB04FC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		891873BA1505519F00CB04FC /* VCExampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VCExampleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		891873BB1505519F00CB04FC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		891873C31505519F00CB04FC /* VCExampleTests-Info.plist */ = {isa = PBXFileReference; path = "VCExampleTests-Info.plist"; sourceTree = "<group>"; };
+		891873C31505519F00CB04FC /* VCExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VCExampleTests-Info.plist"; sourceTree = "<group>"; };
 		891873C51505519F00CB04FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		891873C71505519F00CB04FC /* VCExampleTests.h */ = {isa = PBXFileReference; path = VCExampleTests.h; sourceTree = "<group>"; };
+		891873C71505519F00CB04FC /* VCExampleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCExampleTests.h; sourceTree = "<group>"; };
 		891873C81505519F00CB04FC /* VCExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCExampleTests.m; sourceTree = "<group>"; };
+		891873D7150559B500CB04FC /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		891873D8150559B500CB04FC /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		891873D9150559B500CB04FC /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		89A7BFE0150737D800DB7C1C /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		89A7BFE1150737D800DB7C1C /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		89A7BFE2150737D800DB7C1C /* ThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +91,12 @@
 		8918738E1505519F00CB04FC = {
 			isa = PBXGroup;
 			children = (
+				891873D7150559B500CB04FC /* SecondViewController.h */,
+				891873D8150559B500CB04FC /* SecondViewController.m */,
+				891873D9150559B500CB04FC /* SecondViewController.xib */,
+				89A7BFE0150737D800DB7C1C /* ThirdViewController.h */,
+				89A7BFE1150737D800DB7C1C /* ThirdViewController.m */,
+				89A7BFE2150737D800DB7C1C /* ThirdViewController.xib */,
 				891873A31505519F00CB04FC /* VCExample */,
 				891873C11505519F00CB04FC /* VCExampleTests */,
 				8918739C1505519F00CB04FC /* Frameworks */,
@@ -223,6 +239,8 @@
 			files = (
 				891873A81505519F00CB04FC /* InfoPlist.strings in Resources */,
 				891873B41505519F00CB04FC /* ViewController.xib in Resources */,
+				891873DB150559B500CB04FC /* SecondViewController.xib in Resources */,
+				89A7BFE4150737D800DB7C1C /* ThirdViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +278,8 @@
 				891873AA1505519F00CB04FC /* main.m in Sources */,
 				891873AE1505519F00CB04FC /* AppDelegate.m in Sources */,
 				891873B11505519F00CB04FC /* ViewController.m in Sources */,
+				891873DA150559B500CB04FC /* SecondViewController.m in Sources */,
+				89A7BFE3150737D800DB7C1C /* ThirdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +449,7 @@
 				891873CE1505519F00CB04FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		891873CF1505519F00CB04FC /* Build configuration list for PBXNativeTarget "VCExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -437,6 +458,7 @@
 				891873D11505519F00CB04FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

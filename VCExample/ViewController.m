@@ -8,7 +8,47 @@
 
 #import "ViewController.h"
 
+    // Import the header file for the view controller
+#import "SecondViewController.h"
+#import "ThirdViewController.h"
+
 @implementation ViewController
+SecondViewController *secondViewController;
+ThirdViewController *thirdViewController;
+
+@synthesize datePicker;
+
+
+
+    // Add this here after your add a button to the xib and connect button to file's owner as displayView
+    // This allows the screen to flip when the button is pressed
+-(IBAction) displayView:(id) sender{
+    secondViewController = [[SecondViewController alloc]
+                            initWithNibName:@"SecondViewController"
+                            bundle:nil];
+
+    // Set the property of the second view with the DatePicker view in the current view
+    secondViewController.selectedDatePicker = datePicker;
+    [UIView beginAnimations:@"flipping view" context:nil]; 
+    [UIView setAnimationDuration:1];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut]; 
+    [UIView setAnimationTransition:UIViewAnimationTransitionCurlUp forView:self.view cache:YES];
+    [self.view addSubview:secondViewController.view];
+    [UIView commitAnimations];
+}
+
+    // Set the property of the third view 
+-(IBAction) thirdView:(id) sender{
+    thirdViewController = [[ThirdViewController alloc]
+                           initWithNibName:@"ThirdViewController"
+                           bundle:nil];
+    [UIView beginAnimations:@"flipping view" context:nil];
+    [UIView setAnimationDuration:1];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+    [UIView setAnimationTransition:UIViewAnimationTransitionCurlUp forView:self.view.superview cache:YES];
+    [self.view addSubview:thirdViewController.view];
+    [UIView commitAnimations];
+}
 
 - (void)didReceiveMemoryWarning
 {
